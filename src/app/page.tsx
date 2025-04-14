@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div></div>;
+  return <div className="lg:text-2xl">test</div>;
 }

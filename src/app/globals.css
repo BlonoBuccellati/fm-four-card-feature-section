@@ -10,6 +10,40 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-poppins: var(--font-poppins);
+}
+@theme {
+  --color-primary-red: hsl(0, 78%, 62%);
+  --color-primary-cyan: hsl(180, 62%, 55%);
+  --color-primary-orange: hsl(34, 97%, 64%);
+  --color-primary-blue: hsl(212, 86%, 64%);
+  --color-neutral-gray-500: hsl(234, 12%, 34%);
+  --color-neutral-gray-400: hsl(212, 6%, 44%);
+  --color-neutral--white: hsl(0, 0%, 100%);
+
+  --breakpoint-sm: 375px;
+  --breakpoint-lg: 1440px;
+}
+
+@utility text-preset-1 {
+  font-size: 36px;
+  line-height: 140%;
+  letter-spacing: 0.25px;
+}
+@utility text-preset-3 {
+  font-size: 20px;
+  line-height: 135%;
+  letter-spacing: 0px;
+}
+@utility text-preset-4 {
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0px;
+}
+@utility text-preset-5 {
+  font-size: 13px;
+  line-height: 160%;
+  letter-spacing: 0px;
 }
 
 @media (prefers-color-scheme: dark) {
