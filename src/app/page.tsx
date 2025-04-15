@@ -6,8 +6,8 @@ import IconTeamBuilder from "@/assets/images/icon-team-builder.svg";
 
 export default function Home() {
   return (
-    <div className="font-poppins text-neutral-gray-500 bg-[#FAFAFA] font-thin">
-      <div className="m-auto mt-15 flex w-[90%] max-w-[316px] flex-col gap-10">
+    <div className="font-poppins text-neutral-gray-500 min-h-screen bg-[#FAFAFA] font-thin">
+      <div className="m-auto flex w-[90%] max-w-[316px] flex-col gap-10 pt-15 md:max-lg:max-w-[1000px] lg:max-w-[1300px]">
         {/* ヒーローセクション？ */}
         <section className="text-preset-1 flex flex-col gap-4 border border-black text-center">
           <h1 className="">
@@ -20,31 +20,38 @@ export default function Home() {
             data points to ensure that your project is successful
           </p>
         </section>
-        <div className="grid gap-8">
+        <div className="flex w-full flex-col gap-8 lg:flex-row">
           {/* Card1 */}
           <Card
             title="Supervisor"
-            color="border-primary-cyan"
+            className="border-primary-cyan"
             icon={IconSupervisor}
           >
             Monitors activity to identify project roadblocks
           </Card>
-          {/* Card2 */}
-          <Card
-            title="Team Builder"
-            color="border-primary-red"
-            icon={IconTeamBuilder}
-          >
-            Scans our talent network to create the optimal team for your project
-          </Card>
-          {/* Card3 */}
-          <Card title="Karma" color="border-primary-orange" icon={IconKarma}>
-            Regularly evaluates our talent to ensure quality
-          </Card>
+          <div className="flex flex-col gap-8 md:justify-evenly md:max-lg:flex-row lg:flex-col-reverse">
+            {/* Card2 */}
+            <Card
+              title="Team Builder"
+              className="border-primary-red"
+              icon={IconTeamBuilder}
+            >
+              Scans our talent network to create the optimal team for your
+              project
+            </Card>
+            {/* Card3 */}
+            <Card
+              title="Karma"
+              className="border-primary-orange"
+              icon={IconKarma}
+            >
+              Regularly evaluates our talent to ensure quality
+            </Card>
+          </div>
           {/* Card4 */}
           <Card
             title="Calculator"
-            color="border-primary-blue"
+            className="border-primary-blue"
             icon={IconCalculator}
           >
             Uses data from past projects to provide better delivery estimates
