@@ -7,9 +7,9 @@ import IconTeamBuilder from "@/assets/images/icon-team-builder.svg";
 export default function Home() {
   return (
     <div className="font-poppins text-neutral-gray-500 min-h-screen bg-[#FAFAFA] font-thin">
-      <div className="m-auto flex w-[90%] max-w-[316px] flex-col gap-10 pt-15 md:max-lg:max-w-[1000px] lg:max-w-[1300px]">
+      <div className="m-auto flex w-[90%] max-w-[316px] flex-col gap-10 pt-15 md:max-lg:max-w-[1114px] lg:max-w-max">
         {/* ヒーローセクション？ */}
-        <section className="text-preset-1 flex flex-col gap-4 border border-black text-center">
+        <section className="text-preset-1 mx-auto flex flex-col gap-4 border border-black text-center md:w-[540px]">
           <h1 className="">
             Reliable, efficient delivery
             <br />
@@ -20,7 +20,7 @@ export default function Home() {
             data points to ensure that your project is successful
           </p>
         </section>
-        <div className="flex w-full flex-col gap-8 lg:flex-row">
+        <div className="mx-auto flex w-full flex-col gap-8 lg:flex-row lg:items-center">
           {/* Card1 */}
           <Card
             title="Supervisor"
@@ -29,7 +29,7 @@ export default function Home() {
           >
             Monitors activity to identify project roadblocks
           </Card>
-          <div className="flex flex-col gap-8 md:justify-evenly md:max-lg:flex-row lg:flex-col-reverse">
+          <div className="flex flex-col gap-8 md:max-lg:flex-row md:max-lg:justify-evenly lg:flex-col-reverse">
             {/* Card2 */}
             <Card
               title="Team Builder"
