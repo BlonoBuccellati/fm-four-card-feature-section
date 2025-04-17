@@ -7,7 +7,7 @@ import IconTeamBuilder from "@/assets/images/icon-team-builder.svg";
 export default function Home() {
   return (
     <div className="font-poppins text-neutral-gray-500 min-h-screen bg-[#FAFAFA] font-thin">
-      <div className="m-auto flex w-[90%] flex-col gap-10 pt-15">
+      <div className="m-auto flex w-[90%] flex-col gap-10 pt-[clamp(60px,10.5vw,102px)]">
         {/* ヒーローセクション？ */}
         <section className="text-preset-1 mx-auto flex max-w-[540px] flex-col gap-4 border border-black text-center">
           <h1 className="">
