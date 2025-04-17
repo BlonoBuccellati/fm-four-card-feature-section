@@ -7,7 +7,7 @@ import IconTeamBuilder from "@/assets/images/icon-team-builder.svg";
 export default function Home() {
   return (
     <div className="font-poppins text-neutral-gray-500 min-h-screen bg-[#FAFAFA] font-thin">
-      <div className="m-auto flex w-[90%] flex-col gap-10 pt-[clamp(60px,10.5vw,102px)]">
+      <div className="m-auto flex w-[86%] flex-col gap-15 pt-[clamp(60px,10.5vw,102px)] md:gap-[74px]">
         {/* ヒーローセクション？ */}
         <section className="mx-auto flex max-w-[540px] flex-col gap-4 text-center">
           <h1 className="text-preset-1">
@@ -51,7 +51,7 @@ export default function Home() {
           {/* Card4 */}
           <Card
             title="Calculator"
-            className="border-primary-blue"
+            className="border-primary-blue mb-10 md:mb-20"
             icon={IconCalculator}
           >
             Uses data from past projects to provide better delivery estimates
