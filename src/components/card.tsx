@@ -15,11 +15,15 @@ const Card = ({
 }: PropsWithChildren<CardProps>) => {
   return (
     <section
-      className={`mx-auto max-w-[314px] rounded border-t-4 p-10 shadow-xl ${color}`}
+      className={`mx-auto grid max-w-[314px] gap-8 rounded border-t-4 p-8 shadow-xl lg:max-w-[350px] ${color}`}
     >
-      <h2 className="text-preset-3 font-semibold">{title}</h2>
-      <p>{children}</p>
-      <Image src={icon} alt="test" width={100} />
+      <div>
+        <h2 className="text-preset-3 font-semibold">{title}</h2>
+        <p className="text-preset-5 font-normal">{children}</p>
+      </div>
+      <div className="mb-4.5 flex h-[64px] flex-row-reverse">
+        <Image src={icon} alt="test" width={64} />
+      </div>
     </section>
   );
 };
