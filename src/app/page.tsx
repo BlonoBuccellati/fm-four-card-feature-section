@@ -9,7 +9,7 @@ export default function Home() {
     <div className="font-poppins text-neutral-gray-500 min-h-screen bg-[#FAFAFA] font-thin">
       <div className="m-auto flex w-[90%] flex-col gap-10 pt-[clamp(60px,10.5vw,102px)]">
         {/* ヒーローセクション？ */}
-        <section className="text-preset-1 mx-auto flex max-w-[540px] flex-col gap-4 border border-black text-center">
+        <section className="text-preset-1 gap-4text-center mx-auto flex max-w-[540px] flex-col">
           <h1 className="">
             Reliable, efficient delivery
             <br />
