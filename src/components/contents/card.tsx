@@ -9,13 +9,13 @@ interface CardProps {
 }
 const Card = ({
   title,
-  className: color,
+  className: borderColor,
   icon,
   children,
 }: PropsWithChildren<CardProps>) => {
   return (
     <section
-      className={`mx-auto grid max-w-[314px] gap-8 rounded border-t-4 p-8 shadow-xl lg:max-w-[350px] ${color}`}
+      className={`mx-auto grid max-w-[314px] gap-8 rounded border-t-4 bg-white p-8 shadow-xl lg:max-w-[350px] ${borderColor}`}
     >
       <div>
         <h2 className="text-preset-3 font-semibold">{title}</h2>
